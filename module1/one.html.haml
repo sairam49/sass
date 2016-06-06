@@ -1,0 +1,58 @@
+!!!
+%html
+  %head
+    %title HTML5 Layout
+  %body
+    .wrapper
+      %header
+        %h1 Yoko's Kitchen
+        %nav
+          %ul
+            %li
+              %a.current{href: ""}home
+            %li
+              %a{href: ""}classes
+            %li
+              %a{href: ""}catering
+            %li
+              %a{href:""}about
+            %li
+              %a{href:""}contact
+      %section.courses
+        %article
+          %figure
+            %img{src: "app/assets/images/bok-choi.jpg", alt: "Bok Choi"}
+            %figcaption Bok Choi
+          %hgroup
+            %h2 Japanese Vegetarian
+            %h3 Five week course in London
+          %p A five week introduction to traditional Japanese vegetarian meals, teaching you a selection of rice and noodle dishes.
+        %article
+          %figure
+            %img{src: "app/assets/images/teriyaki.jpg", alt: "Teriyaki sauce"}
+            %figcaption Teriyaki sauce
+          %hgroup
+            %h2 Sauces Masterclass
+            %h3 One day workshop
+          %p An intensive one-day course looking at how to create the most delicious sauces for use in a range of Japanese cookery.
+      %aside
+        %section.popular-recipes
+          %h2 Popular Recipes
+          %a{href: ""}Yakitori (grilled chicken)
+          %a{href: ""}Tsukune (minced chicken patties)
+          %a{href: ""}Okonomiyaki (savory pancakes)
+          %a{href: ""}Mizutaki (chicken stew)
+        %section.contact-details
+          %h2 Contact
+          %p
+            Yoko's Kitchen
+            %br
+            27 Redchurch Street
+            %br
+            Shoreditch
+            %br
+            London E2 7DP
+      %footer
+        2011 Yoko's Kitchen
+
+
