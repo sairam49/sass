@@ -1,0 +1,160 @@
+!!!
+%html
+  %head
+    %title Squadfree
+    %link{ rel:"stylesheet",href: "https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"}
+  %body
+    .header
+      .nav
+        %h2.logo SQUAD FREE
+        %ul
+          %li
+            %a{href:"#"}HOME
+          %li
+            %a{href:"#"}ABOUT
+          %li
+            %a{href:"#"}SERVICE
+          %li
+            %a{href:"#"}CONTACT
+          %li
+            %a{href:"#"}DROPDOWN
+      .caption
+        %h2 WELCOME TO SQUAD
+        %h4 WE ARE GROUP OF GENTLEMEN MAKING AWESOME WEB WITH BOOTSTRAP
+
+
+    .about
+      .up
+        %h2 ABOUT US
+        %i{ class: "fa fa-chevron-down" }
+        %hr
+      .down
+        .outer
+          .inner
+            %h5 ANNA HANACECK
+            %p
+              Pixel Crafter
+            .circle
+              %img{src: "#{image_url '1.jpg'}",alt:"anna"}
+        .outer
+          .inner
+            %h5 MAURA DANIELS
+            %p
+              Ruby on Rails
+            .circle
+              %img{ src: "#{image_url '2.jpg'}",alt:"maura"}
+        .outer
+          .inner
+            %h5 JACK BRAINE
+            %p
+              jQuery Ninja
+            .circle
+              %img{ src: "#{image_url '3.jpg'}",alt:"jack"}
+        .outer
+          .inner
+            %h5 TOM PETTERSON
+            %p
+              Typographer
+            .circle
+              %img{ src: "#{image_url '4.jpg'}",alt:"tom"}
+
+
+    .services
+      .up1
+        %h2 OUR SERVICES
+        %i{ class: "fa fa-chevron-down" }
+        %hr
+      .bottom
+        .out
+          %img{ src: "#{image_url 'a.png'}"}
+          %h5 PRINT
+          %p
+            Vestibulum tincidunt enim in pharetra
+            %br
+            malesuada. Duis semper magna metus
+            %br
+            electram accommodare.
+        .out
+          %img{ src: "#{image_url 'b.png'}"}
+          %h5 WEB DESIGN
+          %p
+            Vestibulum tincidunt enim in pharetra
+            %br
+            malesuada. Duis semper magna metus
+            %br
+            electram accommodare.
+        .out
+          %img{ src: "#{image_url 'c.png'}"}
+          %h5 PHOTOGRAPHY
+          %p
+            Vestibulum tincidunt enim in pharetra
+            %br
+            malesuada. Duis semper magna metus
+            %br
+            electram accommodare.
+        .out
+          %img{ src: "#{image_url 'd.png'}"}
+          %h5 CLOUD SYSTEM
+          %p
+            Vestibulum tincidunt enim in pharetra
+            %br
+            malesuada. Duis semper magna metus
+            %br
+            electram accommodare.
+
+    .details
+      .up
+        %h2 GET IN TOUCH
+        %i{ class: "fa fa-chevron-down" }
+        %hr
+      .box
+        .first
+          .second
+            %form
+              .f1
+                %label NAME
+                %br
+                %input{ type: "text",placeholder: "Enter name"}
+              .f2
+                %label EMAIL ADDRESS
+                %br
+                %input{ type: "text",placeholder: "Enter email"}
+              .f3
+                %label SUBJECT
+                %br
+                %input{ type: "text",placeholder: "Choose one"}
+              .msg
+                %label MESSAGE
+                %br
+                %textarea{ rows: "5",cols: "40",placeholder: "Message"}
+              .b1
+                %input{ type: "submit", value: "SEND MESSAGE"}
+        .third
+          %h3 MAIN OFFICE
+          %br
+          %b Squas Design, Inc.
+          %p
+            Tower 795 Folsom Ave,Beautiful Suite 600
+          %br
+            San Francisco,CA 94107
+          %br
+            P:(123)456-7890
+          %br
+          %b Email
+          %a{ href: "#"}email.name@example.com
+          %br
+          %b We're on social networks
+          %br
+          %span.i1
+            %i{ class: "fa fa-google-plus"}
+          %span.i2
+            %i{ class: "fa fa-facebook"}
+          %span.i3
+            %i{ class: "fa fa-whatsapp"}
+          %span.i4
+            %i{ class: "fa fa-twitter"}
+
+    .footer
+      %i{ class: "fa fa-chevron-up"}
+      %p
+        Copyright 2014 - Squad. All rights reserved.
