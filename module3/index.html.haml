@@ -1,0 +1,235 @@
+!!!
+%html
+  %head
+    %title thesassway
+    %link{ rel:"stylesheet",href: "https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"}
+  %body
+    %nav.navbar
+      .container-fluid
+        .navbar-header
+          %button.navbar-toggle{"data-target" => "#myNavbar", "data-toggle" => "collapse", :type => "button"}
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
+        #myNavbar.collapse.navbar-collapse
+          %ul.nav.navbar-nav
+            %li.logo.hidden-xs.hidden-sm
+              %a{:href => "#"}
+                %img{src: "#{image_url 'logo.png'}"}
+            %li
+              %a{:href => "#"} BEGINNER
+            %li
+              %a{:href => "#"} INTERMEDIATE
+            %li
+              %a{:href => "#"} ADVANCED
+            %li
+              %a{:href => "#"} EDITORIAL
+            %li
+              %a{:href => "#"} NEWS
+            %li
+              %a{:href => "#"} PROJECTS
+            %li.hidden-xs.hidden-sm
+              %a{:href => "#"}
+                %i{:class => "fa fa-rss"}
+    .content
+      .row.hero
+        %h1.centered.col-sm-10.col-md-6
+          %img{src:"#{image_url 'thesassway.svg'}", width:"503",height:"247"}
+      %article.summary
+        .row
+          .hidden-sm.hidden-xs.col-md-2.col-lg-2.col.offset
+            %a
+              %img.img-circle{ src:"#{image_url '1.jpg'}",alt:"tom"}
+          .col-sm-10.col-md-8.col-lg-8.col
+            %h3.summary-title Simple grid mixins
+            .summary-body
+              %p
+                Aleksandar is back! This time with an article on simple grid mixins. Learn how to create your own grid system with a few lines of Sass. It’s actually not that hard.
+      %article.summary
+        .row
+          .hidden-sm.hidden-xs.col-md-2.col-lg-2.col.offset
+            %a
+              %img.img-circle{ src:"#{image_url '2.jpg'}",alt:"tom"}
+          .col-sm-10.col-md-8.col-lg-8.col
+            %h3.summary-title Pure CSS spinners
+            .summary-body
+              %p
+                If you like animation and are looking for a way to spice up your latest project, you might want to grab a spinner from the CSS Spinners project. It’s an open source effort by myself to create a common set of pure CSS spinners.
+      %article.summary
+        .row
+          .hidden-sm.hidden-xs.col-md-2.col-lg-2.col.offset
+            %a
+              %img.img-circle{ src:"#{image_url '3.jpg'}",alt:"tom"}
+          .col-sm-10.col-md-8.col-lg-8.col
+            %h3.summary-title Cubic Bézier representation in Sass
+            .summary-body
+              %p
+                In this more advanced article, Tim Severien and Hugo Giraudel show us how they built a tool in Sass to visualize cubic Bézier functions.
+      %article.summary
+        .row
+          .hidden-sm.hidden-xs.col-md-2.col-lg-2.col.offset
+            %a
+              %img.img-circle{ src:"#{image_url '4.jpg'}",alt:"tom"}
+          .col-sm-10.col-md-8.col-lg-8.col
+            %h3.summary-title Using Object-Oriented CSS with Sass
+            .summary-body
+              %p
+                Jaime Caballero shows us how to use Object-Oriented CSS to cleanup our stylesheets. He even throws in a bit of a Sass twist.
+      %article.summary
+        .row
+          .hidden-sm.hidden-xs.col-md-2.col-lg-2.col.offset
+            %a
+              %img.img-circle{ src:"#{image_url '5.jpg'}",alt:"tom"}
+          .col-sm-10.col-md-8.col-lg-8.col
+            %h3.summary-title Using source maps with Sass 3.3
+            .summary-body
+              %p
+                Tem Hettler shows us how to use source maps to make debugging easier with Sass 3.3 and modern browsers like Safari, Chrome, and Firefox.
+      %article.summary
+        .row
+          .hidden-sm.hidden-xs.col-md-2.col-lg-2.col.offset
+            %a
+              %img.img-circle{ src:"#{image_url '6.jpg'}",alt:"tom"}
+          .col-sm-10.col-md-8.col-lg-8.col
+            %h3.summary-title Inverse trigonometric functions with Sass
+            .summary-body
+              %p
+                Ana Tudor kicks off her first article for The Sass Way with some crazy CSS demos and a lot of advanced math. Learn how to create asin(), acos(), and atan() functions in pure Sass.
+      %article.summary
+        .row
+          .hidden-sm.hidden-xs.col-md-2.col-lg-2.col.offset
+            %a
+              %img.img-circle{ src:"#{image_url '7.jpg'}",alt:"tom"}
+          .col-sm-10.col-md-8.col-lg-8.col
+            %h3.summary-title How to dynamically change text color based on a background color
+            .summary-body
+              %p
+                Learn how to use variables and a custom function to programmatically determine contrasting text colors for different backgrounds.
+      %article.summary
+        .row
+          .hidden-sm.hidden-xs.col-md-2.col-lg-2.col.offset
+            %a
+              %img.img-circle{ src:"#{image_url '1.jpg'}",alt:"tom"}
+          .col-sm-10.col-md-8.col-lg-8.col
+            %h3.summary-title Spriting with Sass and Compass
+            .summary-body
+              %p
+                Learn how to use the image spriting features of Compass to improve page download time and drastically reduce the effort needed to assemble sprite sheets.
+      %article.summary
+        .row
+          .hidden-sm.hidden-xs.col-md-2.col-lg-2.col.offset
+            %a
+              %img.img-circle{ src:"#{image_url '8.jpg'}",alt:"tom"}
+          .col-sm-10.col-md-8.col-lg-8.col
+            %h3.summary-title Implementing the Bubble Sort algorithm with Sass
+            .summary-body
+              %p
+                Until recently it was actually impossible to build a sorting function for strings and other types in Sass, but with the release of Sass 3.3 we now have have the features we need to do just that.
+    %footer.footer.typeset
+      .row
+        %section.col-sm-10.col-lg-5.col-sm-offset-1.col-lg-offset-0.col
+          %h3.mt1.mb0
+            %a{href: "#"}
+              %img.middle{src: "#{image_url 'bottom.svg'}",alt: "sassway"}
+          .typeset.fine-print
+            %p
+              %em The Sass Way
+              covers the latest news and topics on handcrafting CSS with
+              %a.link.external{:href => "http://sass-lang.com", :target => "_blank"} Sass
+              and
+              %a.link.external{:href => "http://compass-style.org", :target => "_blank"} Compass
+              We use an open publishing model and rely on contributions from the Sass community via our
+              %a{:href => "http://github.com/thesassway/thesassway.com"} GitHub project
+            %p
+              %a{:href => "https://github.com/thesassway/thesassway.com/blob/master/CONTRIBUTING.md"} Send us a pull request!
+            %p
+              %a{:href => "https://github.com/thesassway/thesassway.com/issues"} Submit an issue
+              to get in touch about your Sass news or to suggest new content for us to write about.
+
+        %section.col-sm-5.col-md-3.col-lg-2.col-sm-offset-1.col-lg-offset-1.col
+          %h3.h6.mt2.mb1 Contributors
+          %ul.link-list.mb4
+            %li
+              %a{:href => "#"} Adam Stacoviak
+            %li
+              %a{:href => "#"} John W. Long
+            %li
+              %a{:href => "#"} Mario Ricalde
+            %li
+              %a{:href => "#"} Mason Wendell
+            %li
+              %a{:href => "#"} Peter Gasston
+            %li
+              %a{:href => "#"} Roy Tomeij
+            %li
+              %a{:href => "#"} Hugo Giraudel
+            %li
+              %a{:href => "#"} Frank S
+            %li
+              %a{:href => "#"} Daniel Imms
+            %li
+              %a{:href => "#"} Chris Michel
+            %li
+              %a{:href => "#"} Aleksandar Goševski
+            %li
+              %a{:href => "#"} Sebastian Ekström
+            %li
+              %a{:href => "#"} Ana Tudor
+            %li
+              %a{:href => "#"} Tim Hettler
+            %li
+              %a{:href => "#"} Jaime Caballero
+            %li
+              %a{:href => "#"} Tim Severien
+        %section.col-sm-5.col-md-3.col-lg-2.col
+          %h3.h6.mt2.mb1 Categories
+          %ul.link-list.mb4
+            %li
+              %a{:href => "#"} Guides
+            %li
+              %a{:href => "#"} Beginner
+            %li
+              %a{:href => "#"} Intermediate
+            %li
+              %a{:href => "#"} Advanced
+            %li
+              %a{:href => "#"} Editorial
+            %li
+              %a{:href => "#"} News
+            %li
+              %a{:href => "#"} Projects
+            %li
+              %a{:href => "#"} Modular CSS
+        %section.hidden-sm.col-md-3.col-lg-2.col-lg-offset-0.col
+          %h3.h6.mt2.mb1 Made with
+          %ul.link-list.mb4
+            %li
+              %a.link.external{:href => "https://github.com/thesassway", :target => "_blank"} GitHub
+            %li
+              %a.link.external{:href => "http://middlemanapp.com", :target => "_blank"} Middleman
+            %li
+              %a.link.external{:href => "http://heroku.com/", :target => "_blank"} Heroku
+            %li
+              %a.link.external{:href => "http://sass-lang.com/", :target => "_blank"} Sass
+            %li
+              %a.link.external{:href => "http://compass-style.org/", :target => "_blank"} Compass
+        %section.col-sm-10.col-lg-12.col-sm-offset-1.col-lg-offset-0.col.typeset.text-center
+          %p © 2010-2016 The Sass Way. All rights reserved. Articles copyright The Sass Way and individual authors.
+          %p
+            A
+            %a.link.external{:href => "http://riznmedia.com/", :target => "_blank"} RIZN Media
+            production. In association with
+            %a.link.external{:href => "http://thechangelog.com/", :target => "_blank"} The Changelog
+
+
+
+
+
+
+
+
+
+
+
+
+

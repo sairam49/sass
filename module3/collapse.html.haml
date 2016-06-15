@@ -1,0 +1,17 @@
+.panel-group#accordion
+  .panel.panel-default
+    .panel-heading
+      %h4.panel-title
+        %a{ "data-toggle" => "collapse","data-parent" => "#accordion", href: "#c1"} Group1
+    .panel-collapse.collapse.in#c1
+      .panel-body
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit
+  .panel.panel-default
+    .panel-heading
+      %h4.panel-title
+        %a{ "data-toggle" => "collapse","data-parent" => "#accordion", href: "#c2"} Group2
+    .panel-collapse.collapse#c2
+      .panel-body
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit
+
+
